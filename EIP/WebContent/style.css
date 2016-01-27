@@ -1,0 +1,281 @@
+	body 
+	{
+	background: url(images/bg.jpg) top left repeat;
+	font-family: Helvetica, Arial, sans-serif;
+	}
+	
+	h1.myclass 
+	{
+	text-align: center;
+	font-size: 400%;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	}
+
+	#wrapper 
+	{
+	width:960px;
+	height:100%;
+	margin:0 auto;
+	}
+
+	#dataheaderbar
+	{
+	background: #c9e9fe;
+	border-top: 5px #038de8 solid;
+	border-bottom: 5px #038de8 solid;	
+	margin-top: 10px;	
+	} 
+
+	.dataElement
+	{
+	display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 49%;
+    position: relative;
+    margin: 0 auto;
+	}
+
+	#inner_table
+	{
+    height: 48%;
+    overflow-y: auto;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    border-bottom-color: #037ecf;
+    border-left-style: solid;
+    border-left-width: thick;
+    border-left-color: #037ecf;
+	}
+
+	#tableHeader 
+	{
+	text-align: center;
+	}
+
+	table 
+	{ 
+	font-family: Helvetica, Arial, sans-serif;
+	width: 100%;
+	border-collapse: 
+	collapse; border-spacing: 0; 
+	table-layout: fixed;
+	}
+
+	td, th 
+	{ 
+	border: 1px solid transparent; /* No more visible border */
+	height: 30px; 
+	transition: all 0.3s;  /* Simple transition for hover effect */
+
+	}
+
+	th 
+	{
+	background:#037ecf ;  /* Darken header a bit */
+	font-weight: bold;
+	color: #fff;
+	}
+
+	td 
+	{
+	background: #FAFAFA;
+	text-align: center;
+	border: 1px solid #CCC;
+	}	
+	/* Cells in even rows (2,4,6...) are one color */ 
+	tr:nth-child(even) td 
+	{
+	background: #f0f7fc; 
+	}   
+
+	/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+	tr:nth-child(odd) td 
+	{
+ 	background: #FEFEFE; 
+ 	}  
+
+	tr:hover td {
+	background:#cdebfe;
+	border: 1px solid transparent;
+	}
+		
+	#tablePadding 
+	{
+	background: #fff;
+	overflow: hidden;
+	padding: 20px 10px;		
+	}
+	
+	.leftContainer
+	{
+	background: #c9e9fe;
+	overflow: hidden;
+	padding: 20px 10px;
+	margin: 2px 0 0 0;
+	float:left;
+	width: 47%;
+	min-height: 300px;
+	height: 300px;
+	overflow-y: scroll;
+	border: 3px #038de8 solid;
+	}
+
+	.RightContainer
+	{
+	background: #c9e9fe;
+	float:right;
+	padding: 20px 10px;
+	margin: 2px 0 0 0;
+	width: 47%;
+	min-height: 300px;
+	height: 300px;
+	overflow-y: scroll;
+	border: 3px #038de8 solid;
+	}
+
+
+	.link 
+	{
+	color: #000000;
+	font-size: small;
+	margin: 50px;
+	text-decoration: none;
+	}
+
+	.footer
+	{
+	clear: both;
+	margin-top: 10px;
+	position: relative;
+	text-align: center;
+	z-index: 10;
+	}
+
+	#menueOptions
+	{
+	background: #FFF;
+	padding-top: 20px;
+	clear: both;
+	}
+
+	#leftMenuContainer
+	{
+	background: LightBlue;
+	overflow: hidden;
+	padding: 20px 10px;
+	margin: 2px 0 0 0;
+	float:left;
+	width: 47%;
+	min-height: 170px;
+	border: 3px #038de8 solid;
+	}
+
+	#RightMenueContainer
+	{
+	background: LightBlue;
+	float:right;
+	padding: 20px 10px;
+	margin: 2px 0 0 0;
+	width: 47%;
+	min-height: 170px;
+	border: 3px #038de8 solid;
+	}
+
+	.MiddelFullContainer 
+	{
+	background: #c9e9fe;
+	padding: 20px 10px;
+	margin: auto;
+	width: 95%;
+	min-height: 60%;
+	border: 3px #038de8 solid;
+	}
+
+	.header 
+	{
+	overflow: hidden;
+	}
+
+	#rightfloterElement 
+	{
+	float:right;
+	width: 25%;
+	text-align: right;
+    padding-right: 20px;
+
+	}
+
+	#leftfloterElement 
+	{
+	display:inline-block;
+	width: 48%;
+	}
+
+	#rightbutton 
+	{
+	margin: 2px;
+	padding: 3px;	
+	}
+
+	.textbox 
+	{
+	border: 2px black solid;
+	border-color: #969696;;
+	background: white;
+	margin: 5px;
+	padding: 3px;
+	text-align: right;
+	}
+
+	
+	
+
+	.logo
+	{				
+	display: inline-block;
+	height: 63px;
+	margin: 5px 20 0;
+	width: 260px;
+	}
+
+	.search-section 
+	{
+	float: right;
+	margin: 22px 20px 0 0;
+	}
+
+	*
+	{
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	}
+
+	.frmsearch
+	{
+	position: relative;
+	border: 1px solid #3892d3;
+	border-radius: 3px;
+	background: #fff;
+	}
+
+	.txtsearch 
+	{
+	border: 0;
+	padding: 4px;
+	}
+
+	.button {
+	background-color: #3892d3;
+	background: -webkit-linear-gradient(top, #4B9CD7 0%, #3892D3 50%, #358AC8 51%, #3892D3);
+	background: -o-linear-gradient(top, #4B9CD7 0%, #3892D3 50%, #358AC8 51%, #3892D3);
+	background: -ms-linear-gradient(top, #4B9CD7 0%, #3892D3 50%, #358AC8 51%, #3892D3);
+	background: linear-gradient(to bottom, #4B9CD7 0%, #3892D3 50%, #358AC8 51%, #3892D3);
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 12px;
+	border: 0;
+	}

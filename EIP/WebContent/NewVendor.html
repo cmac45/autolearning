@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AutoLearning</title>
+     <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+   <script language="JavaScript" type="text/javascript">
+   function validateForm() {
+    var x = document.forms["myForm"]["vendorName"].value;
+    if (x == null || x == "") {
+        alert("Vendor Name must be filled out");
+        return false;
+    }
+//    var y = document.forms["myForm"]["vendorNumber"].value;
+//    if (y == null || y == "") {
+//        alert("Vendor Number must be filled out");
+//        return false;
+//    }
+     var z = document.forms["myForm"]["address"].value;
+    if (z == null || z == "") {
+        alert("Vendor Address must be filled out");
+        return false;
+    }
+}
+</script>
+  </head>
+  <body>
+
+    <div id="dataheaderbar">
+      <div class="dataElement">
+      <h2 id="tableHeader">New Vendor Form</h2>
+    </div>
+  </div>
+
+ <div id="tablePadding">
+  <div class="MiddelFullContainer">
+    
+    <form name="myForm" action="./SaveVendorInformation" onsubmit="return validateForm()" method="post">
+      <h3>Vendor Name:</h3>
+      <input type="text" name="vendorName">
+      <br>
+      <!-- <h3>Vendor Number:</h3>
+      <input type="text" name="vendorNumber">
+      <br>  -->
+      <h3>Address:</h3>
+      <input type="text" name="address">
+      <br>
+      <h3>City:</h3>
+      <input type="text" name="city">
+      <br>
+      <h3>State:</h3>
+      <input type="text" name="state">
+      <br>
+      <h3>Zip:</h3>
+      <input type="text" name="zip">
+      <br>
+      <h3>Phone:</h3>
+      <input type="text" name="phoneNumber">
+      <br>
+      <h3>Web Address:</h3>
+      <input type="text" name="webAddress">
+      <br>
+      <br>
+      <input type="submit" value="Submit" />
+    </form>
+     </div>
+  </div>
+ 
+
+
+<div class="footer">
+  <a class="link" tabindex="0" href="http://www.ephesoft.com">Powered
+   by Ephesoft</a>
+ </div>
+
+  </body>
+</html>
