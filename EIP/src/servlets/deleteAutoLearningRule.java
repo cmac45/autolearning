@@ -21,17 +21,7 @@ import database.database;
  * Servlet implementation class deleteAutoLearningRule
  */
 @WebServlet("/deleteAutoLearningRule")
-@ServletSecurity(
-        value = @HttpConstraint(
-                rolesAllowed = {
-                        "admin"
-                }),
-        httpMethodConstraints = {
-                @HttpMethodConstraint(value = "GET", rolesAllowed = {
-                        "admin"
-                }),
-                @HttpMethodConstraint(value = "POST")
-        })
+
 public class deleteAutoLearningRule extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
